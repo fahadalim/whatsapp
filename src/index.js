@@ -1,7 +1,9 @@
 const express = require("express");
 const whatsappController = require("./controller/whatapp.controller");
 const app = express();
-
+var cors = require('cors')
+ 
+app.use(cors())
 
 app.use(express.json());
 
